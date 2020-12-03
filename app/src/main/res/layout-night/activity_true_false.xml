@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.TrueFalseActivity">
+
+        <TextView
+            android:id="@+id/quizType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="True / False Quiz"
+            android:fontFamily="@font/go_regular"
+            android:freezesText="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/countDownProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginEnd="24dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quizType" />
+
+        <TextView
+            android:id="@+id/countDownTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/textColorPrimary"
+            android:fontFamily="@font/go_regular"
+            android:textSize="@dimen/_23ssp"
+            android:freezesText="true"
+            app:layout_constraintBottom_toBottomOf="@+id/countDownProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/countDownProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/countDownProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/countDownProgressBar" />
+
+        <TextView
+            android:id="@+id/quizQuestionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/question_1_20"
+            android:freezesText="true"
+            android:textColor="@color/textColorPrimary"
+            android:fontFamily="@font/go_regular"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toStartOf="@+id/countDownProgressBar"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/countDownProgressBar" />
+
+        <TextView
+            android:id="@+id/quizQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/go_regular"
+            android:freezesText="true"
+            android:text="@string/dummy_question"
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toTopOf="@id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="183dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toTopOf="@id/quizConfirmBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quizQuestion">
+
+            <RadioButton
+                android:id="@+id/optionTrue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:padding="@dimen/_5sdp"
+                android:text="True"
+                android:fontFamily="@font/go_regular"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/_18ssp" />
+
+            <RadioButton
+                android:id="@+id/optionFalse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:freezesText="true"
+                android:padding="@dimen/_5sdp"
+                android:text="False"
+                android:fontFamily="@font/go_regular"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/_18ssp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/quizConfirmBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/_5sdp"
+            android:text="Confirm"
+            android:textColor="@color/textColorPrimary"
+            android:freezesText="true"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

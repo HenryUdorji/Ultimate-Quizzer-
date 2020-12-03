@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/_10sdp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/go_regular"
+        android:text="Set number of Quiz questions"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <RadioButton
+            android:id="@+id/option10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:buttonTint="@color/colorAccent"
+            android:freezesText="true"
+            android:padding="@dimen/_5sdp"
+            android:text="10 questions"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_16ssp" />
+
+        <RadioButton
+            android:id="@+id/option20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:buttonTint="@color/colorAccent"
+            android:freezesText="true"
+            android:padding="@dimen/_5sdp"
+            android:text="20 questions"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_16ssp" />
+
+        <RadioButton
+            android:id="@+id/option30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:buttonTint="@color/colorAccent"
+            android:freezesText="true"
+            android:padding="@dimen/_5sdp"
+            android:text="30 questions"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_16ssp" />
+
+        <RadioButton
+            android:id="@+id/option40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:buttonTint="@color/colorAccent"
+            android:freezesText="true"
+            android:padding="@dimen/_5sdp"
+            android:text="40 questions"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/_16ssp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

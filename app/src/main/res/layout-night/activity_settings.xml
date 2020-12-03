@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/textColorPrimary"
+        app:titleTextAppearance="@style/TextStyle"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/totalQuestionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolBar"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_total_number_of_questions_in_quiz"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"/>
+
+        <TextView
+            android:id="@+id/numberOfQuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_20_questions"
+            android:fontFamily="@font/go_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

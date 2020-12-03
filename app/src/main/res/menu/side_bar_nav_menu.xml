@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navViewHighScore"
+        android:title="@string/view_high_score"
+        android:icon="@drawable/ic_performance"
+        android:enabled="true"/>
+
+    <item android:id="@+id/navContactUs"
+        android:title="@string/email_us"
+        android:icon="@drawable/ic_contact"
+        android:enabled="true"/>
+
+    <item android:id="@+id/navSettings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"/>
+
+    <item android:id="@+id/navRateApp"
+        android:title="@string/rate_app"
+        android:icon="@drawable/ic_rate"
+        android:enabled="true"/>
+
+    <item android:id="@+id/navShareApp"
+        android:title="@string/share_app"
+        android:icon="@drawable/ic_share"
+        android:enabled="true"/>
+</menu>
